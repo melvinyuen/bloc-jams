@@ -65,6 +65,6 @@ var setCurrentAlbum = funtion(album) {
     }
 };
 
-windows.onload = function() { 
+window.onload = function() { 
     setCurrentAlbum(albumPicasso);
 };
