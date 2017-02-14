@@ -84,8 +84,15 @@ var setCurrentAlbum = function(album) {
     }
 };
 
+var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
+
 window.onload = function() { 
     setCurrentAlbum(albumPicasso);
+
+    songListContainer.addEventListener('mouseover',function(event) {
+    //#1
+        console.log(event.target);
+    });
     
     var albums = [albumPicasso, albumMarconi, albumMelvin];                 // create an array of album objects
     var index = 1;                                                          /* create a `index` var to track the array index to click: if index === 1, then we'll load index + 1 (or 2) */
