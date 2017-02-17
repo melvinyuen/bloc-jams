@@ -85,6 +85,7 @@ var setCurrentAlbum = function(album) {
 };
 
 var songListContainer = document.getElementsByClassName('album-view-song-list')[0];
+<<<<<<< HEAD
 var songRows = document.getElementsByClassName('album-view-song-item');
 
 // Album button templates
